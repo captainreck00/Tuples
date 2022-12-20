@@ -1,0 +1,18 @@
+X=() 
+
+def Input(N):
+    no=int(input("Enter the number of students : "))
+    for i in range(no):
+        l=input("Enter your Name : ")
+        l=l[0]+l[1:].lower()
+        N=N+(l,)
+    L=list(N)
+    L.sort()
+    N=tuple(L)
+    [print(c,end=" ") for c in L]
+
+    print(N)    
+
+    return N
+
+Input(X)    
