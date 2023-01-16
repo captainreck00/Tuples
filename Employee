@@ -15,4 +15,4 @@ Age=Ar[1]
 Mobile_Number=Ar[2]
 
 for i in range(5):
-    print("Name of the Employee is %s \nAge of the Employee is %d \nMobile Number of the Employee is %d \n"%(Name[i],Age[i],Mobile_Number[i]))
+    print("\nName of the Employee is %s \nAge of the Employee is %d \nMobile Number of the Employee is %d \n"%(Name[i],Age[i],Mobile_Number[i]))

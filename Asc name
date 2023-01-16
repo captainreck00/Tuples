@@ -6,13 +6,10 @@ def Input(N):
         l=input("Enter your Name : ")
         l=l[0]+l[1:].lower()
         N=N+(l,)
-    L=list(N)
-    L.sort()
-    N=tuple(L)
-    [print(c,end=" ") for c in L]
-
-    print(N)    
-
+    N=sorted(N) 
     return N
 
-Input(X)    
+
+X=Input(X)
+
+print(X)    
