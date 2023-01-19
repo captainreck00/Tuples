@@ -31,13 +31,13 @@ def tax(A_Sal,Tax,Cess,SurC,T):
             SurC=SurC+(15/100*k,)
             Tax=Tax+(k,)
         Cess=Cess+(4/100*Tax[i],)
-        T=T+(Tax[i]+SurC[i]+Cess[i],)    
+        T=T+(Tax[i]+SurC[i]+Cess[i],)
+          
     
     return [Tax,Cess,SurC,T]      
 
 Name,Pan,A_Sal=Input(Name,Pan,A_Sal)
-Tax,Cess,Surc,T_Tax=tax(A_Sal,Tax,Cess,SurC,T_Tax)
-print(Name,Pan,A_Sal,Tax,Cess,Surc,T_Tax)
+tax(A_Sal,Tax,Cess,SurC,T_Tax)[2]
 
-for i in range(0,2):
-    print("Name:",Name[i],"Pan Number",Pan[i],"Annual Salary:",A_Sal[i],"Tax:",Tax[i],"Cess:",Cess[i],"Surcharge:",SurC[i],"Total Tax:",T_Tax[i])
+for i in range(3):
+    print(Name[i],Pan[i],A_Sal[i],Tax[i],Cess[i],T_Tax[i],SurC[i])
